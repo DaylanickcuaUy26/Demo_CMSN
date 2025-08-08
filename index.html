@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>CMSN_DEMO</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container" id="lockscreen">
+    <h1 id="title">Xin Mời Nhập Pass!</h1>
+    <div class="left">
+      <img src="anh2.jpg" alt="Cute Girl" />
+    </div>
+    <div class="right">
+      <input type="password" id="password" disabled placeholder="......" />
+      <div class="keypad">
+        <div class="keys">
+          <button style="background-color: transparent; border: 2px solid #333;" onclick="press(1)">1</button>
+          <button style="background-color: transparent; border: 2px solid #333;" onclick="press(2)">2</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(3)">3</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(4)">4</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(5)">5</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(6)">6</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(7)">7</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(8)">8</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(9)">9</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="submitPass()">✔</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="press(0)">0</button>
+          <button style="background-color: transparent;border: 2px solid #333;" onclick="clearPass()">✖</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="rainCanvas"></canvas>
+
+  <div id="celebration" style="display: none; text-align: center;">
+    <h2 id="birthdayText">Happy Birthday</h2>
+    <p id="runText" style="font-size: 20px; font-weight: bold; color: aqua; overflow: hidden; "></p>
+    <div class="circle-container">
+  <div class="circle-inner">
+    <img src="anh1.jpg" class="circle-item" style="--i: 0;" />
+    <img src="anh2.jpg" class="circle-item" style="--i: 1;" />
+    <img src="anh5.jpg" class="circle-item" style="--i: 2;" />
+  </div>
+</div>
+    <br>
+    <button id="giftButton" onclick="showGalaxy()">Click</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
