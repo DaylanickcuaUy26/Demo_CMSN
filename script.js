@@ -1,6 +1,6 @@
 // ====== Mật khẩu ======
 let input = "";
-const correctPass = "2025"; // Thay đổi mật khẩu tại đây
+const correctPass = "0808"; // Thay đổi mật khẩu tại đây
 
 function press(num) {
   if (input.length < 10) {
